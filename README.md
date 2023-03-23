@@ -20,5 +20,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 If you are getting 'Deceptive website ahead' warnings, try a different browser to access. Safari works best for me.
 
-This project web client was made using typescript, next. The list of libraries and dependencies include: tailwind, prisma, react-icons, next-auth, bcrypt, SWR, lodash, zustand
+This project web client was made using typescript, next. The list of libraries and dependencies include: tailwind, prisma, react-icons, next-auth, bcrypt, SWR, lodash, zustand. And the database used for the project is MongoDB.
 
