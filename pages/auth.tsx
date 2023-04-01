@@ -4,6 +4,7 @@ import axios from 'axios';
 import { signIn } from 'next-auth/react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
+import Head from 'next/head';
 
 const Auth = () => {
     const [email, setEmail] = useState('');
@@ -48,8 +49,14 @@ const Auth = () => {
     }
     
     return (
-        <div onKeyDown={handleEnter}
-        className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div 
+            onKeyDown={handleEnter}
+            className="relative h-full w-full bg-[url('/images/hero.jpg')] 
+                bg-no-repeat bg-center bg-fixed bg-cover"
+        >
+            <Head>
+                <meta name="google-site-verification" content="fOIiRofz2ckyxn5SOYvGzLqy8SMRBHz2iTgXqQK7tzs" />       
+            </Head>
             <div className="bg-black w-full h-full lg:bg-opacity-50">
                 <nav className="px-12 py-5">
                     <p className="font-bold text-red-600 text-3xl">NETFLICKS</p>
